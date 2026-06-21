@@ -1,0 +1,1510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=yes">
+    <title>Dream Built Construction | Premium Construction Pakistan</title>
+    <meta name="description" content="Dream Built Construction is a registered construction company working since 2011. We build residential, commercial, and farmhouse projects across Pakistan with ISO standard quality.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%230A0A0A'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='700' font-size='14' fill='%23C8A95C'>DB</text></svg>">
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dreambuilt-website.vercel.app/">
+    <meta property="og:title" content="Dream Built Construction | Premium Construction Pakistan">
+    <meta property="og:description" content="Registered construction company working since 2011. Residential, commercial, and farmhouse projects across Pakistan with ISO standard quality.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1200&auto=format">
+    <meta property="og:locale" content="en_PK">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dream Built Construction | Premium Construction Pakistan">
+    <meta name="twitter:description" content="Registered construction company working since 2011. Quality with a difference.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1200&auto=format">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <noscript>
+        <style>
+            .reveal-up, .reveal-scale, .stagger-children > * {
+                opacity: 1 !important;
+                transform: none !important;
+            }
+        </style>
+    </noscript>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --deep-black: #0A0A0A;
+            --charcoal: #141414;
+            --charcoal-light: #1F1F1F;
+            --gold: #C8A95C;
+            --gold-dark: #A8883E;
+            --gold-soft: #D9B86C;
+            --off-white: #F5F3EF;
+            --off-white-muted: #CBC6BC;
+            --border-dim: rgba(255, 255, 255, 0.05);
+            --border-gold: rgba(200, 169, 92, 0.3);
+            --transition-smooth: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --transition-luxury: cubic-bezier(0.2, 0.9, 0.4, 1.1);
+            --max-width: 1440px;
+            --pad: clamp(1.5rem, 5vw, 3rem);
+        }
+
+        html, body {
+            overflow-x: hidden;
+            overflow-y: auto;
+            position: relative;
+            height: auto;
+        }
+
+        body {
+            background-color: var(--deep-black);
+            color: var(--off-white);
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+            line-height: 1.5;
+        }
+
+        section, .container, main, footer, nav {
+            overflow: visible;
+        }
+
+        .heading-xl {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            font-size: clamp(3rem, 7vw, 5.8rem);
+            line-height: 0.92;
+            letter-spacing: -0.02em;
+            text-transform: uppercase;
+            color: var(--off-white);
+        }
+
+        .heading-lg {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            font-size: clamp(2.2rem, 4.5vw, 3.8rem);
+            line-height: 1;
+            letter-spacing: -0.01em;
+            text-transform: uppercase;
+        }
+
+        .heading-md {
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            font-size: clamp(1.4rem, 3vw, 2.2rem);
+            line-height: 1.2;
+        }
+
+        .serif-italic {
+            font-family: 'Cormorant Garamond', serif;
+            font-style: italic;
+            font-weight: 400;
+            font-size: clamp(1.3rem, 2.8vw, 2rem);
+            color: var(--off-white-muted);
+        }
+
+        .meta-gold {
+            font-size: 0.7rem;
+            letter-spacing: 0.28em;
+            text-transform: uppercase;
+            font-weight: 500;
+            color: var(--gold);
+            margin-bottom: 1.2rem;
+            display: inline-block;
+        }
+
+        .body-text {
+            font-size: 0.9rem;
+            font-weight: 300;
+            line-height: 1.75;
+            color: var(--off-white-muted);
+        }
+
+        strong, b {
+            font-weight: 600;
+            color: var(--off-white);
+        }
+
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 var(--pad);
+        }
+
+        section {
+            padding: clamp(5rem, 10vw, 8rem) 0;
+            border-bottom: 1px solid var(--border-dim);
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: clamp(2rem, 5vw, 5rem);
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.8rem;
+        }
+
+        .grid-4 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+        }
+
+        nav {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            padding: 1.4rem var(--pad);
+            background: rgba(10, 10, 10, 0.85);
+            backdrop-filter: blur(14px);
+            border-bottom: 1px solid var(--border-dim);
+        }
+
+        .nav-inner {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            font-size: 1.2rem;
+            letter-spacing: -0.01em;
+            text-transform: uppercase;
+            color: var(--off-white);
+            text-decoration: none;
+        }
+
+        .logo span {
+            font-size: 0.55rem;
+            font-weight: 400;
+            letter-spacing: 0.28em;
+            display: block;
+            color: var(--gold);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            font-size: 0.7rem;
+            font-weight: 500;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--off-white-muted);
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover { color: var(--gold); }
+
+        .nav-cta {
+            background: transparent;
+            border: 1px solid var(--gold);
+            color: var(--gold);
+            padding: 0.65rem 1.6rem;
+            font-size: 0.65rem;
+            font-weight: 600;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .nav-cta:hover {
+            background: var(--gold);
+            color: var(--deep-black);
+        }
+
+        .burger {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: var(--off-white);
+            font-size: 1.6rem;
+        }
+
+        .hero {
+            padding-top: 9rem;
+            padding-bottom: 5rem;
+            background: linear-gradient(145deg, #0A0A0A 0%, #111111 100%);
+        }
+
+        .hero-inner {
+            display: grid;
+            grid-template-columns: 1.2fr 0.9fr;
+            gap: 3rem;
+            align-items: end;
+        }
+
+        .hero-media {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-media img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 1.4s var(--transition-luxury);
+        }
+
+        .hero-media:hover img {
+            transform: scale(1.02);
+        }
+
+        /*
+         * ANIMATION SYSTEM — JS-GATED
+         * Base state: always visible (opacity:1).
+         * JS adds .js-anim-ready to <body> before observing.
+         * Only when .js-anim-ready is present do elements go opacity:0.
+         * This means: no JS = fully visible always. JS = smooth animation.
+         * Fixes: invisible sections on all devices and screen sizes.
+         */
+
+        /* Step 1: only hide elements after JS confirms it's running */
+        .js-anim-ready .reveal-up {
+            opacity: 0;
+            transform: translateY(35px);
+            transition: opacity 0.8s var(--transition-smooth), transform 0.8s var(--transition-smooth);
+        }
+        .js-anim-ready .reveal-scale {
+            opacity: 0;
+            transform: scale(0.96);
+            transition: opacity 1s var(--transition-luxury), transform 1s var(--transition-luxury);
+        }
+        .js-anim-ready .stagger-children > * {
+            opacity: 0;
+            transform: translateY(25px);
+            transition: opacity 0.6s var(--transition-smooth), transform 0.6s var(--transition-smooth);
+        }
+
+        /* Step 2: reveal when observer fires */
+        .reveal-up.visible {
+            opacity: 1 !important;
+            transform: translateY(0) !important;
+        }
+        .reveal-scale.visible {
+            opacity: 1 !important;
+            transform: scale(1) !important;
+        }
+        .stagger-children.visible > * {
+            opacity: 1 !important;
+            transform: translateY(0) !important;
+        }
+        .stagger-children.visible > *:nth-child(1) { transition-delay: 0s; }
+        .stagger-children.visible > *:nth-child(2) { transition-delay: 0.1s; }
+        .stagger-children.visible > *:nth-child(3) { transition-delay: 0.2s; }
+        .stagger-children.visible > *:nth-child(4) { transition-delay: 0.3s; }
+        .stagger-children.visible > *:nth-child(5) { transition-delay: 0.4s; }
+        .stagger-children.visible > *:nth-child(6) { transition-delay: 0.5s; }
+        .stagger-children.visible > *:nth-child(7) { transition-delay: 0.6s; }
+        .stagger-children.visible > *:nth-child(8) { transition-delay: 0.7s; }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0;
+            border-top: 1px solid var(--border-dim);
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            border-right: 1px solid var(--border-dim);
+            border-bottom: 1px solid var(--border-dim);
+            background: var(--charcoal);
+            transition: all 0.5s var(--transition-smooth);
+        }
+
+        .service-card:hover {
+            background: #1A1A1A;
+            transform: translateY(-4px);
+            box-shadow: 0 25px 35px -15px rgba(0,0,0,0.5);
+        }
+
+        .service-img {
+            height: 280px;
+            overflow: hidden;
+        }
+
+        .service-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.9s var(--transition-luxury);
+        }
+
+        .service-card:hover .service-img img {
+            transform: scale(1.06);
+        }
+
+        .service-content {
+            padding: 1.8rem;
+        }
+
+        .service-num {
+            font-family: 'Inter', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: rgba(200, 169, 92, 0.2);
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+
+        .service-title {
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: -0.01em;
+            margin-bottom: 0.6rem;
+            color: var(--off-white);
+        }
+
+        .inquire-link {
+            display: inline-block;
+            margin-top: 1rem;
+            font-size: 0.65rem;
+            font-weight: 600;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: var(--gold);
+            border-bottom: 1px solid var(--gold);
+            transition: all 0.3s;
+        }
+
+        .inquire-link:hover {
+            color: var(--gold-soft);
+            transform: translateX(4px);
+        }
+
+        .projects-showcase {
+            background: var(--deep-black);
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.8rem;
+            margin-top: 3rem;
+        }
+
+        .project-item {
+            position: relative;
+            overflow: hidden;
+            aspect-ratio: 4 / 5;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+
+        .project-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 1.2s var(--transition-luxury);
+        }
+
+        .project-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .project-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 1.8rem;
+            background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+            transform: translateY(20px);
+            transition: transform 0.5s var(--transition-smooth);
+        }
+
+        .project-item:hover .project-overlay {
+            transform: translateY(0);
+        }
+
+        .project-title {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 0.2rem;
+            color: var(--off-white);
+        }
+
+        .project-sub {
+            font-size: 0.65rem;
+            color: var(--gold);
+            letter-spacing: 0.05em;
+        }
+
+        .completed-badge {
+            display: inline-block;
+            background: rgba(200, 169, 92, 0.2);
+            color: var(--gold);
+            font-size: 0.6rem;
+            padding: 0.2rem 0.6rem;
+            border-radius: 20px;
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.05em;
+        }
+
+        .project-location {
+            font-size: 0.65rem;
+            color: var(--off-white-muted);
+        }
+
+        .project-details-btn {
+            display: inline-block;
+            margin-top: 0.8rem;
+            font-size: 0.65rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            color: var(--gold);
+            text-decoration: none;
+            border-bottom: 1px solid var(--gold);
+            transition: all 0.3s;
+        }
+
+        .project-details-btn:hover {
+            color: var(--gold-soft);
+            border-bottom-color: var(--gold-soft);
+        }
+
+        .project-detail-panel {
+            background: var(--charcoal-light);
+            margin-top: 1.2rem;
+            padding: 1.2rem;
+            border-left: 2px solid var(--gold);
+            display: none;
+        }
+
+        .project-detail-panel.show {
+            display: block;
+            animation: fadeSlide 0.4s var(--transition-smooth);
+        }
+
+        @keyframes fadeSlide {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .detail-list {
+            list-style: none;
+            margin-top: 0.8rem;
+        }
+        .detail-list li {
+            font-size: 0.75rem;
+            color: var(--off-white-muted);
+            margin-bottom: 0.4rem;
+            padding-left: 1rem;
+            position: relative;
+        }
+        .detail-list li::before {
+            content: "—";
+            color: var(--gold);
+            position: absolute;
+            left: 0;
+        }
+
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            border-top: 1px solid var(--border-dim);
+            margin-top: 2rem;
+        }
+
+        .step-item {
+            padding: 2rem 1.5rem;
+            border-right: 1px solid var(--border-dim);
+            border-bottom: 1px solid var(--border-dim);
+            background: var(--charcoal-light);
+            transition: all 0.3s ease;
+        }
+
+        .step-item:hover {
+            background: #2A2A2A;
+            transform: translateY(-3px);
+        }
+
+        .step-num {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--gold);
+            opacity: 0.6;
+            margin-bottom: 1rem;
+        }
+
+        .step-title {
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.8rem;
+            color: var(--off-white);
+        }
+
+        .step-desc {
+            font-size: 0.8rem;
+            line-height: 1.6;
+            color: var(--off-white-muted);
+        }
+
+        .btn-wa {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+            background: var(--gold);
+            color: var(--deep-black);
+            padding: 1rem 2.5rem;
+            font-weight: 700;
+            font-size: 0.75rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: all 0.3s var(--transition-smooth);
+        }
+
+        .btn-wa:hover {
+            background: var(--gold-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 15px 25px -10px rgba(200,169,92,0.3);
+        }
+
+        .equipment-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        .equipment-item {
+            background: var(--charcoal-light);
+            padding: 1.2rem 1.5rem;
+            border-left: 2px solid var(--gold);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .equipment-item .name {
+            font-weight: 500;
+            color: var(--off-white);
+        }
+
+        .equipment-item .qty {
+            color: var(--gold);
+            font-weight: 600;
+        }
+
+        .float-wa {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 9999;
+            display: block;
+            visibility: visible;
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .float-btn {
+            display: flex !important;
+            align-items: center;
+            justify-content: center;
+            width: 54px;
+            height: 54px;
+            background: var(--gold);
+            border-radius: 50%;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .float-btn svg {
+            width: 26px;
+            height: 26px;
+            fill: var(--deep-black);
+        }
+
+        .float-btn:hover {
+            transform: scale(1.08);
+            background: var(--gold-dark);
+        }
+
+        .mobile-menu {
+            position: fixed;
+            inset: 0;
+            background: var(--deep-black);
+            z-index: 1050;
+            transform: translateX(100%);
+            transition: transform 0.5s var(--transition-smooth);
+            padding: 3rem var(--pad);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .mobile-menu.open {
+            transform: translateX(0);
+        }
+
+        @media (max-width: 1100px) {
+            .services-grid { grid-template-columns: repeat(2, 1fr); }
+            .process-steps { grid-template-columns: repeat(3, 1fr); }
+            .projects-grid { grid-template-columns: repeat(2, 1fr); }
+            .grid-3 { grid-template-columns: repeat(2, 1fr); }
+            .grid-4 { grid-template-columns: repeat(2, 1fr); }
+            .equipment-grid { grid-template-columns: 1fr; }
+        }
+
+        @media (max-width: 800px) {
+            .nav-links, .nav-cta { display: none; }
+            .burger { display: block; }
+            .hero-inner { grid-template-columns: 1fr; }
+            .grid-2 { grid-template-columns: 1fr; }
+            .services-grid { grid-template-columns: 1fr; }
+            .process-steps { grid-template-columns: 1fr 1fr; }
+            .projects-grid { grid-template-columns: 1fr; }
+            .grid-3 { grid-template-columns: 1fr; }
+            .grid-4 { grid-template-columns: 1fr; }
+            .hero { padding-top: 7rem; }
+        }
+
+        @media (max-width: 550px) {
+            .process-steps { grid-template-columns: 1fr; }
+        }
+
+        @media (max-width: 768px) {
+            .float-wa {
+                bottom: 15px;
+                right: 15px;
+            }
+            .float-btn {
+                width: 48px;
+                height: 48px;
+            }
+            .float-btn svg {
+                width: 24px;
+                height: 24px;
+            }
+        }
+
+        /*
+         * Mobile overlay fix — project title always visible on touch
+         */
+        @media (max-width: 900px) {
+            .project-overlay {
+                transform: translateY(0) !important;
+                background: linear-gradient(to top, rgba(0,0,0,0.88) 55%, rgba(0,0,0,0.1) 100%);
+            }
+            .service-card:hover {
+                transform: none;
+                box-shadow: none;
+            }
+        }
+
+        footer {
+            background: #0A0A0A;
+            padding: 3rem 0 2rem;
+            border-top: 1px solid var(--border-dim);
+        }
+
+        .contact-info-block {
+            background: var(--charcoal-light);
+            padding: 1.5rem;
+            border-left: 3px solid var(--gold);
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info-block p {
+            margin-bottom: 0.3rem;
+        }
+
+        .badge-gold {
+            display: inline-block;
+            background: rgba(200, 169, 92, 0.15);
+            color: var(--gold);
+            padding: 0.2rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            letter-spacing: 0.05em;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="nav-inner">
+        <a href="#" class="logo">Dream Built<span>CONSTRUCTION</span></a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="https://wa.me/923454696064?text=Hello%20Dream%20Built%20Construction%20team%2C%20I%20want%20to%20discuss%20my%20construction%20project." class="nav-cta" target="_blank" rel="noopener noreferrer">Chat</a>
+        <button class="burger" id="burgerBtn">☰</button>
+    </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+    <button id="closeMenu" style="background:none; border:none; font-size:2rem; color:var(--off-white); align-self:flex-end;">✕</button>
+    <ul style="list-style: none; margin-top: 3rem;">
+        <li><a href="#about" class="mobile-link" style="font-size:2rem; font-weight:600; text-transform:uppercase; display:block; padding:1rem 0; text-decoration:none; color:var(--off-white);">About</a></li>
+        <li><a href="#services" class="mobile-link" style="font-size:2rem; font-weight:600; text-transform:uppercase; display:block; padding:1rem 0; text-decoration:none; color:var(--off-white);">Services</a></li>
+        <li><a href="#projects" class="mobile-link" style="font-size:2rem; font-weight:600; text-transform:uppercase; display:block; padding:1rem 0; text-decoration:none; color:var(--off-white);">Projects</a></li>
+        <li><a href="#process" class="mobile-link" style="font-size:2rem; font-weight:600; text-transform:uppercase; display:block; padding:1rem 0; text-decoration:none; color:var(--off-white);">Process</a></li>
+        <li><a href="#contact" class="mobile-link" style="font-size:2rem; font-weight:600; text-transform:uppercase; display:block; padding:1rem 0; text-decoration:none; color:var(--off-white);">Contact</a></li>
+    </ul>
+    <a href="https://wa.me/923454696064?text=Hello%20Dream%20Built%20Construction%20team%2C%20I%20want%20to%20discuss%20my%20construction%20project." class="btn-wa" style="margin-top:2rem; justify-content:center;" target="_blank" rel="noopener noreferrer">Start a project →</a>
+</div>
+
+<main>
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="container">
+            <div class="hero-inner">
+                <div class="hero-media reveal-scale">
+                    <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1400&auto=format" alt="Dream Built Construction luxury project" fetchpriority="high" onerror="this.src='images/hassan-farmhouse.jpg'">
+                </div>
+                <div class="hero-content reveal-up">
+                    <div class="meta-gold">Building Pakistan since 2011</div>
+                    <div class="heading-xl">DREAM BUILT<br>CONSTRUCTION</div>
+                    <div class="serif-italic" style="margin: 1.5rem 0 2rem;">Quality with a difference – Customer satisfaction</div>
+                    <p class="body-text" style="max-width: 400px; margin-bottom: 2rem;"><strong>We build residential, commercial, and farmhouse projects</strong> across Pakistan with ISO standard quality. No hidden costs, no delays. Just great results.</p>
+                    <a href="https://wa.me/923454696064?text=Hello%20Dream%20Built%20Construction%20team%2C%20I%20want%20to%20discuss%20my%20construction%20project." class="btn-wa" target="_blank" rel="noopener noreferrer">Talk to us →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="grid-2">
+                <div class="reveal-up">
+                    <div class="meta-gold">Who we are</div>
+                    <div class="heading-lg">BUILT TO<br>LAST</div>
+                    <div class="serif-italic" style="margin: 1rem 0 1.5rem;">Delivering beyond expectation, always</div>
+                    <p class="body-text"><strong>Dream Built Construction</strong> is a registered company working since 2011 in the field of construction. We contribute to building construction in Pakistan with core values that create success and long-term relationships with our customers.</p>
+                    <p class="body-text" style="margin-top: 1rem;">Our employees are highly skilled workers and dedicated professionals. Our strength was founded on our ability to mobilize our physical and human resources efficiently and effectively to any site within Pakistan, resulting in tremendous savings in project costs.</p>
+                    <div style="margin-top: 2rem; display: flex; gap: 1.5rem; flex-wrap: wrap;">
+                        <div><span class="badge-gold">✓ Registered Company</span></div>
+                        <div><span class="badge-gold">✓ NTN: 0237388</span></div>
+                        <div><span class="badge-gold">✓ Since 2011</span></div>
+                    </div>
+                </div>
+                <div class="reveal-scale">
+                    <img src="images/about-team.jpg" alt="Zain Rasool – Founder & CEO, Dream Built Construction" loading="lazy" style="width:100%; display:block;">
+
+                    <!-- CEO Profile Card -->
+                    <div style="
+                        margin-top: 1.5rem;
+                        padding: 1.8rem;
+                        background: var(--charcoal-light);
+                        border-left: 3px solid var(--gold);
+                        position: relative;
+                    ">
+                        <!-- Quote mark -->
+                        <div style="
+                            font-family: 'Cormorant Garamond', serif;
+                            font-size: 5rem;
+                            line-height: 0.6;
+                            color: rgba(200, 169, 92, 0.15);
+                            position: absolute;
+                            top: 1rem;
+                            right: 1.5rem;
+                            user-select: none;
+                        ">"</div>
+
+                        <p style="
+                            font-family: 'Cormorant Garamond', serif;
+                            font-style: italic;
+                            font-size: clamp(0.95rem, 2vw, 1.05rem);
+                            line-height: 1.75;
+                            color: var(--off-white-muted);
+                            margin-bottom: 1.5rem;
+                            position: relative;
+                            z-index: 1;
+                        ">At Dream Built Construction, we do not simply build structures — we build confidence. Every project we take on carries the weight of someone's vision, and that responsibility is something we never take lightly. Since 2011, our strength has been an uncompromising commitment to quality, transparency, and precision. We believe that a great building begins with a trustworthy relationship — one built on honesty, clear communication, and results that speak for themselves. When you choose Dream Built, you choose a partner who is invested in your success as much as you are.</p>
+
+                        <div style="display: flex; align-items: center; gap: 1rem; border-top: 1px solid var(--border-gold); padding-top: 1.2rem;">
+                            <div style="width: 40px; height: 2px; background: var(--gold); flex-shrink: 0;"></div>
+                            <div>
+                                <div style="
+                                    font-family: 'Inter', sans-serif;
+                                    font-weight: 700;
+                                    font-size: 1rem;
+                                    letter-spacing: -0.01em;
+                                    color: var(--off-white);
+                                    text-transform: uppercase;
+                                ">Zain Rasool</div>
+                                <div style="
+                                    font-size: 0.62rem;
+                                    font-weight: 600;
+                                    letter-spacing: 0.18em;
+                                    color: var(--gold);
+                                    text-transform: uppercase;
+                                    margin-top: 0.25rem;
+                                ">Founder & Chief Executive Officer</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vision & Mission -->
+            <div class="grid-2" style="margin-top: 4rem; border-top: 1px solid var(--border-dim); padding-top: 4rem;">
+                <div class="reveal-up" style="background: var(--charcoal-light); padding: 2rem; border-left: 3px solid var(--gold);">
+                    <div class="meta-gold" style="margin-bottom: 0.5rem;">Our Vision</div>
+                    <p class="body-text" style="font-size: 1.1rem; font-weight: 400; color: var(--off-white);"><strong>To be a respectable building contractor delivering beyond expectation, always.</strong></p>
+                </div>
+                <div class="reveal-up" style="background: var(--charcoal-light); padding: 2rem; border-left: 3px solid var(--gold);">
+                    <div class="meta-gold" style="margin-bottom: 0.5rem;">Our Mission</div>
+                    <p class="body-text" style="font-size: 1.1rem; font-weight: 400; color: var(--off-white);"><strong>To procure projects at competitive pricing, provide safe working conditions and deliver quality work within reasonable time frame.</strong></p>
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="stats stagger-children" style="display:flex; gap:3rem; margin-top: 5rem; border-top:1px solid var(--border-dim); padding-top:2.5rem; flex-wrap:wrap;">
+                <div><span style="font-size:2.5rem; font-weight:700; color:var(--gold);">15+</span><br><span class="body-text"><strong>Years of experience</strong></span></div>
+                <div><span style="font-size:2.5rem; font-weight:700; color:var(--gold);">50+</span><br><span class="body-text"><strong>Projects completed</strong></span></div>
+                <div><span style="font-size:2.5rem; font-weight:700; color:var(--gold);">100%</span><br><span class="body-text"><strong>Client satisfaction</strong></span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services & Specialities -->
+    <section id="services" style="background: #0C0C0C;">
+        <div class="container">
+            <div class="reveal-up">
+                <div class="meta-gold">What we do</div>
+                <div class="heading-lg">OUR SERVICES &<br>SPECIALITIES</div>
+                <div class="serif-italic" style="margin-top: 1rem;">Quality with a difference – Customer satisfaction</div>
+            </div>
+
+            <!-- Services -->
+            <div class="grid-3 stagger-children" style="margin-top: 3rem; gap: 1.5rem;">
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&auto=format&fit=crop" alt="Residential building construction – Dream Built Construction" loading="lazy">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-num">01</div>
+                        <div class="service-title">Residential Buildings</div>
+                        <p class="body-text">Homes, farmhouses, and villas built with care and precision.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&auto=format&fit=crop" alt="Multi-story office building construction – Dream Built Construction" loading="lazy">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-num">02</div>
+                        <div class="service-title">Multi-Story Office Buildings</div>
+                        <p class="body-text">Corporate spaces and commercial towers designed for excellence.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1459767129954-1b1c1f9b9ace?w=800&auto=format&fit=crop" alt="Commercial building construction – Dream Built Construction" loading="lazy">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-num">03</div>
+                        <div class="service-title">Commercial Buildings</div>
+                        <p class="body-text">Shopping malls, plazas, and business centers.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Specialities -->
+            <div style="margin-top: 3.5rem;">
+                <div class="meta-gold" style="margin-bottom: 1.5rem;">Our Specialities</div>
+                <div class="grid-3 stagger-children" style="gap: 1.5rem;">
+                    <div class="service-card">
+                        <div class="service-img" style="height: 220px;">
+                            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&auto=format&fit=crop" alt="Frame and gray structural works – Dream Built Construction" loading="lazy">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-num">A</div>
+                            <div class="service-title" style="font-size: 1rem;">Frame & Gray Structural Works</div>
+                            <p class="body-text" style="font-size: 0.85rem;">Foundation, columns, beams, and structural framing.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-img" style="height: 220px;">
+                            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&auto=format&fit=crop" alt="Interior and exterior finishing works – Dream Built Construction" loading="lazy">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-num">B</div>
+                            <div class="service-title" style="font-size: 1rem;">Interior / Exterior Finishing Works</div>
+                            <p class="body-text" style="font-size: 0.85rem;">Plaster, paint, flooring, cladding, and complete finishes.</p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-img" style="height: 220px;">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop" alt="Waterproofing works – Dream Built Construction" loading="lazy">
+                        </div>
+                        <div class="service-content">
+                            <div class="service-num">C</div>
+                            <div class="service-title" style="font-size: 1rem;">Waterproofing</div>
+                            <p class="body-text" style="font-size: 0.85rem;">Roof, basement, and wall waterproofing solutions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Complete Projects Gallery – all projects from PDF -->
+    <section id="projects" class="projects-showcase">
+        <div class="container">
+            <div class="reveal-up">
+                <div class="meta-gold">Our portfolio</div>
+                <div class="heading-lg">COMPLETED PROJECTS</div>
+                <div class="serif-italic" style="margin-top: 0.5rem;">A showcase of our work across Pakistan</div>
+            </div>
+
+            <!-- Featured Projects Grid -->
+            <div class="projects-grid stagger-children" id="projectsGrid">
+                <!-- 1. Hassan Nawaz Khokhar Farmhouse -->
+                <div class="project-item">
+                    <img src="images/hassan-farmhouse.jpg" alt="Hassan Nawaz Khokhar Farmhouse – luxury farmhouse by Dream Built Construction, Chakkri M2, Islamabad" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="completed-badge">✓ COMPLETED</div>
+                        <div class="project-title">Hassan Nawaz Khokhar Farmhouse</div>
+                        <div class="project-sub">Chakkri, M2, Islamabad</div>
+                        <a href="projects/hassan-nawaz-khokhar-farmhouse.html" class="project-details-btn" data-project="hassan">View Details →</a>
+                    </div>
+                </div>
+                <!-- 2. Zishan Kalim Farmhouse -->
+                <div class="project-item">
+                    <img src="images/zishan-farmhouse.jpg" alt="Zishan Kalim Farmhouse No.241 – modern farmhouse construction by Dream Built, Gulberg Greens, Islamabad" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="completed-badge">✓ COMPLETED</div>
+                        <div class="project-title">Zishan Kalim Farmhouse</div>
+                        <div class="project-sub">No. 241, Gulberg Greens, Islamabad</div>
+                        <a href="projects/zishan-kalim-farmhouse.html" class="project-details-btn" data-project="zishan">View Details →</a>
+                    </div>
+                </div>
+                <!-- 3. DAMCON Tower -->
+                <div class="project-item">
+                    <img src="images/damcon-tower.jpg" alt="DAMCON Tower – commercial high-rise by Dream Built Construction, Civic Center Gulberg Greens, Islamabad" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="completed-badge">✓ COMPLETED</div>
+                        <div class="project-title">DAMCON Tower</div>
+                        <div class="project-sub">Civic Center, Gulberg Greens, Islamabad</div>
+                        <a href="projects/damcon-tower.html" class="project-details-btn" data-project="damcon">View Details →</a>
+                    </div>
+                </div>
+                <!-- 4. BERG1 Business Square -->
+                <div class="project-item">
+                    <img src="images/berg1.jpg" alt="BERG1 Business Square – completed commercial building by Dream Built Construction, Gulberg Greens, Islamabad" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="completed-badge">✓ COMPLETED</div>
+                        <div class="project-title">BERG1 Business Square</div>
+                        <div class="project-sub">Gulberg Greens, Islamabad</div>
+                        <a href="projects/berg1-business-square.html" class="project-details-btn" data-project="berg">View Details →</a>
+                    </div>
+                </div>
+                <!-- 5. Shopping Mall G8 -->
+                <div class="project-item">
+                    <img src="images/mall-g8.jpg" alt="Shopping Mall G8 – retail construction by Dream Built Construction, Sector G8, Islamabad" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="completed-badge">✓ COMPLETED</div>
+                        <div class="project-title">Shopping Mall</div>
+                        <div class="project-sub">Sector G8, Islamabad</div>
+                        <a href="projects/shopping-mall-g8-islamabad.html" class="project-details-btn" data-project="mall">View Details →</a>
+                    </div>
+                </div>
+                <!-- 6. Hills One Behria Enclave -->
+                <div class="project-item">
+                    <img src="images/hills-one.jpg" alt="Hills One – residential apartment building by Dream Built Construction, Behria Enclave, Islamabad" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="completed-badge">✓ COMPLETED</div>
+                        <div class="project-title">Hills One</div>
+                        <div class="project-sub">Behria Enclave, Islamabad</div>
+                        <a href="projects/hills-one-behria-enclave.html" class="project-details-btn" data-project="hills">View Details →</a>
+                    </div>
+                </div>
+                <!-- 7. House #46, I Block -->
+                <div class="project-item">
+                    <img src="images/house46.jpg" alt="House #46 I Block – residential house construction by Dream Built, Gulberg Greens, Islamabad" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="completed-badge">✓ COMPLETED</div>
+                        <div class="project-title">House #46, I Block</div>
+                        <div class="project-sub">Gulberg Greens, Islamabad</div>
+                        <a href="projects/house-46-i-block-gulberg-greens.html" class="project-details-btn" data-project="house46">View Details →</a>
+                    </div>
+                </div>
+                <!-- 8. C05 Farmhouse -->
+                <div class="project-item">
+                    <img src="images/c05-farmhouse.jpg" alt="C05 Farmhouse 10 Kanal – luxury farmhouse construction by Dream Built, Gulberg Greens, Islamabad" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="completed-badge">✓ COMPLETED</div>
+                        <div class="project-title">C05 Farmhouse</div>
+                        <div class="project-sub">10 Kanal, Gulberg Greens</div>
+                        <a href="projects/c05-farmhouse-10-kanal.html" class="project-details-btn" data-project="c05">View Details →</a>
+                    </div>
+                </div>
+                <!-- 9. C170 Farmhouse -->
+                <div class="project-item">
+                    <img src="images/c170-farmhouse.jpg" alt="C170 Farmhouse 5 Kanal – farmhouse project by Dream Built Construction, Gulberg Greens, Islamabad" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="completed-badge">✓ COMPLETED</div>
+                        <div class="project-title">C170 Farmhouse</div>
+                        <div class="project-sub">5 Kanal, Gulberg Greens</div>
+                        <a href="projects/c170-farmhouse-5-kanal.html" class="project-details-btn" data-project="c170">View Details →</a>
+                    </div>
+                </div>
+                <!-- 10. Gulberg Residensia -->
+                <div class="project-item">
+                    <img src="images/residensia.jpg" alt="Gulberg Residensia – 5, 7 & 10 Marla residential construction by Dream Built, Islamabad" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="completed-badge">✓ COMPLETED</div>
+                        <div class="project-title">Gulberg Residensia</div>
+                        <div class="project-sub">5, 7 & 10 Marla</div>
+                        <a href="projects/gulberg-residensia.html" class="project-details-btn" data-project="residensia">View Details →</a>
+                    </div>
+                </div>
+                <!-- 11. Boundary Wall A241 -->
+                <div class="project-item">
+                    <img src="images/boundary-wall.jpg" alt="Boundary Wall A241 Farmhouse – perimeter wall construction by Dream Built, Gulberg Greens, Islamabad" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="completed-badge">✓ COMPLETED</div>
+                        <div class="project-title">Boundary Wall A241</div>
+                        <div class="project-sub">Gulberg Greens, Islamabad</div>
+                        <a href="projects/boundary-wall-a241-farmhouse.html" class="project-details-btn" data-project="boundary">View Details →</a>
+                    </div>
+                </div>
+                <!-- 12. House #563 T Block -->
+                <div class="project-item">
+                    <img src="images/t563.jpg" alt="House #563 T Block – residential building by Dream Built Construction, Gulberg Greens, Islamabad" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="completed-badge">✓ COMPLETED</div>
+                        <div class="project-title">House #563, T Block</div>
+                        <div class="project-sub">Gulberg Greens, Islamabad</div>
+                        <a href="projects/house-563-t-block.html" class="project-details-btn" data-project="t563">View Details →</a>
+                    </div>
+                </div>
+                <!-- 13. House #899 A Block -->
+                <div class="project-item">
+                    <img src="images/a899.jpg" alt="House #899 A Block – modern residential house by Dream Built Construction, Gulberg Greens, Islamabad" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="completed-badge">✓ COMPLETED</div>
+                        <div class="project-title">House #899, A Block</div>
+                        <div class="project-sub">Gulberg Greens, Islamabad</div>
+                        <a href="projects/house-899-a-block.html" class="project-details-btn" data-project="a899">View Details →</a>
+                    </div>
+                </div>
+                <!-- 14. House #266 L Block -->
+                <div class="project-item">
+                    <img src="images/l266.jpg" alt="House #266 L Block – residential construction by Dream Built Construction, Gulberg Greens, Islamabad" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="completed-badge">✓ COMPLETED</div>
+                        <div class="project-title">House #266, L Block</div>
+                        <div class="project-sub">Gulberg Greens, Islamabad</div>
+                        <a href="projects/house-266-l-block.html" class="project-details-btn" data-project="l266">View Details →</a>
+                    </div>
+                </div>
+                <!-- 15. Finishing Works -->
+                <div class="project-item">
+                    <img src="images/finishing-works.jpg" alt="Finishing Works – interior and exterior finishing by Dream Built Construction, Islamabad" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="completed-badge">✓ COMPLETED</div>
+                        <div class="project-title">Finishing Works</div>
+                        <div class="project-sub">Various Projects</div>
+                        <a href="projects/finishing-works.html" class="project-details-btn" data-project="finishing">View Details →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Detail Panels (all 15) -->
+            <div id="hassan-details" class="project-detail-panel">
+                <div class="service-title" style="margin-bottom: 0.5rem;">Hassan Nawaz Khokhar Farmhouse</div>
+                <p class="body-text"><strong>Location:</strong> Chakkri, M2, Islamabad | <strong>Type:</strong> Luxury Farmhouse</p>
+                <ul class="detail-list">
+                    <li>Complete structural and finishing works</li>
+                    <li>Modern architectural design with premium materials</li>
+                    <li>Landscaped gardens and outdoor spaces</li>
+                </ul>
+                <a href="https://wa.me/923454696064?text=I'm%20interested%20in%20the%20Hassan%20Nawaz%20Khokhar%20Farmhouse" class="inquire-link" style="margin-top: 1rem; display: inline-block;">Ask about similar projects →</a>
+            </div>
+            <div id="zishan-details" class="project-detail-panel">
+                <div class="service-title" style="margin-bottom: 0.5rem;">Zishan Kalim Farmhouse – No. 241</div>
+                <p class="body-text"><strong>Location:</strong> Block-A, Gulberg Greens, Islamabad | <strong>Type:</strong> Luxury Residential Farmhouse</p>
+                <ul class="detail-list">
+                    <li>Grand entrance with double-height living spaces</li>
+                    <li>Master suite, multiple bedrooms, open terraces</li>
+                    <li>Central lawn, decorative fountain, garden pathways</li>
+                </ul>
+                <a href="https://wa.me/923454696064?text=I'm%20interested%20in%20the%20Zishan%20Kalim%20Farmhouse" class="inquire-link" style="margin-top: 1rem; display: inline-block;">Get a similar design →</a>
+            </div>
+            <div id="damcon-details" class="project-detail-panel">
+                <div class="service-title" style="margin-bottom: 0.5rem;">DAMCON Tower</div>
+                <p class="body-text"><strong>Location:</strong> Civic Center, Gulberg Greens, Islamabad | <strong>Type:</strong> Commercial Office Tower</p>
+                <ul class="detail-list">
+                    <li>Modern glass curtain wall façade</li>
+                    <li>Architectural lighting and branding signage</li>
+                    <li>Premium commercial spaces and corporate offices</li>
+                </ul>
+                <a href="https://wa.me/923454696064?text=I'm%20interested%20in%20DAMCON%20Tower" class="inquire-link" style="margin-top: 1rem; display: inline-block;">Discuss your commercial project →</a>
+            </div>
+            <div id="berg-details" class="project-detail-panel">
+                <div class="service-title" style="margin-bottom: 0.5rem;">BERG1 Business Square</div>
+                <p class="body-text"><strong>Location:</strong> Gulberg Greens, Islamabad | <strong>Type:</strong> Commercial Business Complex</p>
+                <ul class="detail-list">
+                    <li>Modern corporate architecture</li>
+                    <li>Premium office spaces and retail areas</li>
+                    <li>High-end finishes and professional environment</li>
+                </ul>
+                <a href="https://wa.me/923454696064?text=I'm%20interested%20in%20BERG1%20Business%20Square" class="inquire-link" style="margin-top: 1rem; display: inline-block;">Inquire about commercial spaces →</a>
+            </div>
+            <div id="mall-details" class="project-detail-panel">
+                <div class="service-title" style="margin-bottom: 0.5rem;">Shopping Mall – Sector G8</div>
+                <p class="body-text"><strong>Location:</strong> Sector G8, Islamabad | <strong>Type:</strong> Retail Shopping Mall</p>
+                <ul class="detail-list">
+                    <li>Modern retail space with premium finishes</li>
+                    <li>Spacious interiors and customer-friendly design</li>
+                    <li>Complete structural and finishing works</li>
+                </ul>
+                <a href="https://wa.me/923454696064?text=I'm%20interested%20in%20a%20shopping%20mall%20project" class="inquire-link" style="margin-top: 1rem; display: inline-block;">Build a shopping mall →</a>
+            </div>
+            <div id="hills-details" class="project-detail-panel">
+                <div class="service-title" style="margin-bottom: 0.5rem;">Hills One – Behria Enclave</div>
+                <p class="body-text"><strong>Location:</strong> Behria Enclave, Islamabad | <strong>Type:</strong> Luxury Residential</p>
+                <ul class="detail-list">
+                    <li>Premium residential development</li>
+                    <li>Modern architecture with luxury finishes</li>
+                    <li>Landscaped surroundings and quality construction</li>
+                </ul>
+                <a href="https://wa.me/923454696064?text=I'm%20interested%20in%20Hills%20One%20Behria%20Enclave" class="inquire-link" style="margin-top: 1rem; display: inline-block;">Build a luxury residence →</a>
+            </div>
+            <div id="house46-details" class="project-detail-panel">
+                <div class="service-title" style="margin-bottom: 0.5rem;">House #46, I Block</div>
+                <p class="body-text"><strong>Location:</strong> I Block, Gulberg Greens, Islamabad | <strong>Type:</strong> Residential Building</p>
+                <ul class="detail-list">
+                    <li>Complete construction with premium finishes</li>
+                    <li>Modern design and quality materials</li>
+                    <li>Timely completion</li>
+                </ul>
+                <a href="https://wa.me/923454696064?text=I'm%20interested%20in%20House%20%2346%20I%20Block" class="inquire-link" style="margin-top: 1rem; display: inline-block;">Build a similar home →</a>
+            </div>
+            <div id="c05-details" class="project-detail-panel">
+                <div class="service-title" style="margin-bottom: 0.5rem;">C05 Farmhouse – 10 Kanal</div>
+                <p class="body-text"><strong>Location:</strong> Gulberg Greens, Islamabad | <strong>Type:</strong> Luxury Farmhouse</p>
+                <ul class="detail-list">
+                    <li>Spacious farmhouse on 10 Kanal plot</li>
+                    <li>Modern architecture with premium landscaping</li>
+                    <li>High-quality construction</li>
+                </ul>
+                <a href="https://wa.me/923454696064?text=I'm%20interested%20in%20C05%20Farmhouse" class="inquire-link" style="margin-top: 1rem; display: inline-block;">Inquire about farmhouse projects →</a>
+            </div>
+            <div id="c170-details" class="project-detail-panel">
+                <div class="service-title" style="margin-bottom: 0.5rem;">C170 Farmhouse – 5 Kanal</div>
+                <p class="body-text"><strong>Location:</strong> Gulberg Greens, Islamabad | <strong>Type:</strong> Luxury Farmhouse</p>
+                <ul class="detail-list">
+                    <li>Elegant farmhouse on 5 Kanal plot</li>
+                    <li>Contemporary design and premium finishes</li>
+                    <li>Landscaped gardens</li>
+                </ul>
+                <a href="https://wa.me/923454696064?text=I'm%20interested%20in%20C170%20Farmhouse" class="inquire-link" style="margin-top: 1rem; display: inline-block;">Get a similar design →</a>
+            </div>
+            <div id="residensia-details" class="project-detail-panel">
+                <div class="service-title" style="margin-bottom: 0.5rem;">Gulberg Residensia</div>
+                <p class="body-text"><strong>Location:</strong> Gulberg Greens, Islamabad | <strong>Type:</strong> Residential Development</p>
+                <ul class="detail-list">
+                    <li>5, 7 & 10 Marla residential units</li>
+                    <li>Modern design with quality construction</li>
+                    <li>Completed projects</li>
+                </ul>
+                <a href="https://wa.me/923454696064?text=I'm%20interested%20in%20Gulberg%20Residensia" class="inquire-link" style="margin-top: 1rem; display: inline-block;">Explore residential options →</a>
+            </div>
+            <div id="boundary-details" class="project-detail-panel">
+                <div class="service-title" style="margin-bottom: 0.5rem;">Boundary Wall – A241 Farmhouse</div>
+                <p class="body-text"><strong>Location:</strong> A241, Gulberg Greens, Islamabad | <strong>Type:</strong> Boundary Wall Construction</p>
+                <ul class="detail-list">
+                    <li>Premium boundary wall with modern design</li>
+                    <li>Quality materials and craftsmanship</li>
+                    <li>Completed efficiently</li>
+                </ul>
+                <a href="https://wa.me/923454696064?text=I'm%20interested%20in%20boundary%20wall%20construction" class="inquire-link" style="margin-top: 1rem; display: inline-block;">Discuss boundary wall projects →</a>
+            </div>
+            <div id="t563-details" class="project-detail-panel">
+                <div class="service-title" style="margin-bottom: 0.5rem;">House #563, T Block</div>
+                <p class="body-text"><strong>Location:</strong> T Block, Gulberg Greens, Islamabad | <strong>Type:</strong> Residential Building</p>
+                <ul class="detail-list">
+                    <li>Complete residential construction</li>
+                    <li>Modern finishes and quality work</li>
+                    <li>Timely delivery</li>
+                </ul>
+                <a href="https://wa.me/923454696064?text=I'm%20interested%20in%20House%20%23563%20T%20Block" class="inquire-link" style="margin-top: 1rem; display: inline-block;">Build a custom home →</a>
+            </div>
+            <div id="a899-details" class="project-detail-panel">
+                <div class="service-title" style="margin-bottom: 0.5rem;">House #899, A Block</div>
+                <p class="body-text"><strong>Location:</strong> A Block, Gulberg Greens, Islamabad | <strong>Type:</strong> Residential Building</p>
+                <ul class="detail-list">
+                    <li>High-quality residential construction</li>
+                    <li>Modern design and finishes</li>
+                    <li>Completed successfully</li>
+                </ul>
+                <a href="https://wa.me/923454696064?text=I'm%20interested%20in%20House%20%23899%20A%20Block" class="inquire-link" style="margin-top: 1rem; display: inline-block;">Get a similar home →</a>
+            </div>
+            <div id="l266-details" class="project-detail-panel">
+                <div class="service-title" style="margin-bottom: 0.5rem;">House #266, L Block</div>
+                <p class="body-text"><strong>Location:</strong> L Block, Gulberg Greens, Islamabad | <strong>Type:</strong> Residential Building</p>
+                <ul class="detail-list">
+                    <li>Premium residential construction</li>
+                    <li>Quality materials and craftsmanship</li>
+                    <li>On-time completion</li>
+                </ul>
+                <a href="https://wa.me/923454696064?text=I'm%20interested%20in%20House%20%23266%20L%20Block" class="inquire-link" style="margin-top: 1rem; display: inline-block;">Build your dream home →</a>
+            </div>
+            <div id="finishing-details" class="project-detail-panel">
+                <div class="service-title" style="margin-bottom: 0.5rem;">Finishing Works</div>
+                <p class="body-text"><strong>Type:</strong> Interior & Exterior Finishing | <strong>Scope:</strong> Various Projects</p>
+                <ul class="detail-list">
+                    <li>Premium plaster, paint, and flooring</li>
+                    <li>Modern cladding and finishes</li>
+                    <li>Attention to detail and quality</li>
+                </ul>
+                <a href="https://wa.me/923454696064?text=I'm%20interested%20in%20finishing%20works" class="inquire-link" style="margin-top: 1rem; display: inline-block;">Discuss finishing needs →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipment & Machinery -->
+    <section id="equipment" style="background: #0C0C0C;">
+        <div class="container">
+            <div class="reveal-up">
+                <div class="meta-gold">Our resources</div>
+                <div class="heading-lg">CONSTRUCTION<br>MACHINERY & EQUIPMENT</div>
+                <div class="serif-italic" style="margin-top: 0.5rem;">Fully equipped for projects of any scale</div>
+            </div>
+
+            <div class="equipment-grid stagger-children" style="margin-top: 2rem;">
+                <div class="equipment-item"><span class="name">Scaffolding</span><span class="qty">20,000 ft</span></div>
+                <div class="equipment-item"><span class="name">Vibrator</span><span class="qty">06</span></div>
+                <div class="equipment-item"><span class="name">Shuttering Plywood</span><span class="qty">Lots</span></div>
+                <div class="equipment-item"><span class="name">Concrete Mixture</span><span class="qty">02</span></div>
+                <div class="equipment-item"><span class="name">Lift Machine</span><span class="qty">02</span></div>
+                <div class="equipment-item"><span class="name">General Tools</span><span class="qty">Lots</span></div>
+                <div class="equipment-item"><span class="name">Steel Cutting & Bending Machines</span><span class="qty">04</span></div>
+                <div class="equipment-item"><span class="name">Mobile Concrete Pump</span><span class="qty">01 (Rental)</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section id="process" style="background: #0A0A0A;">
+        <div class="container">
+            <div class="reveal-up">
+                <div class="meta-gold">How we work</div>
+                <div class="heading-lg">SIMPLE PROCESS<br>CLEAR RESULTS</div>
+                <div class="serif-italic" style="margin-top: 0.8rem;">From consultation to completion – we handle it all</div>
+            </div>
+            <div class="process-steps stagger-children" style="margin-top: 2rem;">
+                <div class="step-item"><div class="step-num">1</div><div class="step-title">TALK</div><div class="step-desc">We listen to your ideas, needs, and budget. No pressure.</div></div>
+                <div class="step-item"><div class="step-num">2</div><div class="step-title">PLAN</div><div class="step-desc">We create a clear design, timeline, and cost estimate.</div></div>
+                <div class="step-item"><div class="step-num">3</div><div class="step-title">BUILD</div><div class="step-desc">Skilled workers use quality materials. Regular updates.</div></div>
+                <div class="step-item"><div class="step-num">4</div><div class="step-title">FINISH</div><div class="step-desc">Final cleaning, inspection, and handover of your space.</div></div>
+                <div class="step-item"><div class="step-num">5</div><div class="step-title">SUPPORT</div><div class="step-desc">We stay available for questions and small fixes.</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section style="background: #111111; border-bottom: none;">
+        <div class="container">
+            <div class="grid-2" style="align-items: center;">
+                <div class="reveal-up">
+                    <div class="meta-gold">What clients say</div>
+                    <div class="heading-lg">HAPPY CLIENTS</div>
+                    <div class="serif-italic" style="margin-top: 1rem;">"Quality with a difference"</div>
+                </div>
+                <div class="reveal-up">
+                    <p class="body-text" style="font-size:1rem; font-style:italic;"><strong>“Dream Built delivered our farmhouse exactly as we wanted.</strong> They communicated clearly and finished on time. Highly recommend.” — Farmhouse Client, Islamabad</p>
+                    <p class="body-text" style="margin-top: 2rem;"><strong>“Professional, honest, and high quality.</strong> One of the best construction teams we've worked with.” — Commercial Client, Gulberg Greens</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" style="background: #0C0C0C; border-bottom: none;">
+        <div class="container">
+            <div class="reveal-up">
+                <div class="meta-gold">Get in touch</div>
+                <div class="heading-lg">CONTACT US</div>
+                <div class="serif-italic" style="margin-top: 0.5rem;">Let's discuss your next project</div>
+            </div>
+
+            <div class="grid-2" style="margin-top: 3rem;">
+                <div class="reveal-up">
+                    <div class="contact-info-block">
+                        <p><strong style="color: var(--gold);">📞 Phone</strong></p>
+                        <p class="body-text"><a href="tel:03454696064" style="color: var(--off-white); text-decoration: none;">0345-4696064</a></p>
+                        <p class="body-text"><a href="tel:03344621415" style="color: var(--off-white); text-decoration: none;">0334-4621415</a></p>
+                    </div>
+                    <div class="contact-info-block">
+                        <p><strong style="color: var(--gold);">📧 Email</strong></p>
+                        <p class="body-text"><a href="mailto:eng.zainrtarar@outlook.com" style="color: var(--off-white); text-decoration: none;">eng.zainrtarar@outlook.com</a></p>
+                    </div>
+                    <div class="contact-info-block">
+                        <p><strong style="color: var(--gold);">📍 Office</strong></p>
+                        <p class="body-text">Office #3, 4th Floor, Berg-1, Business Square,<br>Gulberg Greens, Islamabad, Pakistan</p>
+                    </div>
+                    <div style="margin-top: 1rem;">
+                        <span class="badge-gold">✓ Registered Company</span>
+                        <span class="badge-gold" style="margin-left: 0.5rem;">✓ NTN: 0237388</span>
+                    </div>
+                </div>
+
+                <div class="reveal-up" style="display: flex; flex-direction: column; gap: 1.5rem; justify-content: center;">
+                    <p class="body-text" style="font-size: 1.1rem;">Reach us directly on WhatsApp for a free consultation.</p>
+                    <p class="body-text">No forms, no waiting — a direct conversation with our project team begins with one message.</p>
+                    <a href="https://wa.me/923454696064?text=Hello%20Dream%20Built%20Construction%20team%2C%20I%20want%20to%20discuss%20my%20construction%20project." class="btn-wa" target="_blank" rel="noopener noreferrer" style="align-self: flex-start;">
+                        Chat with us on WhatsApp →
+                    </a>
+                    <p class="body-text" style="font-size: 0.8rem; color: var(--off-white-muted);">Free consultation · No obligation · Quick response</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="grid-2" style="margin-bottom: 3rem;">
+                <div>
+                    <div class="logo" style="margin-bottom:0.5rem;">Dream Built<span>CONSTRUCTION</span></div>
+                    <p class="body-text"><strong>Simple, honest, premium construction</strong> across Pakistan since 2011.</p>
+                    <p class="body-text" style="font-size: 0.8rem; margin-top: 0.5rem;">Registered Company · NTN: 0237388</p>
+                </div>
+                <div style="display: flex; gap: 3rem; flex-wrap:wrap;">
+                    <div>
+                        <div class="meta-gold" style="margin-bottom:0.8rem;">Contact</div>
+                        <a href="https://wa.me/923454696064?text=Hello%20Dream%20Built%20Construction%20team%2C%20I%20want%20to%20discuss%20my%20construction%20project." style="display:block; color:var(--gold); text-decoration:none;"><strong>WhatsApp: +92 345 469 6064</strong></a>
+                        <span class="body-text" style="font-size: 0.8rem;">0345-4696064</span><br>
+                        <span class="body-text" style="font-size: 0.8rem;">0334-4621415</span>
+                    </div>
+                    <div>
+                        <div class="meta-gold" style="margin-bottom:0.8rem;">Location</div>
+                        <span class="body-text" style="font-size: 0.8rem;">Office #3, 4th Floor, Berg-1,<br>Business Square, Gulberg Greens,<br>Islamabad, Pakistan</span>
+                    </div>
+                    <div>
+                        <div class="meta-gold" style="margin-bottom:0.8rem;">Legal</div>
+                        <a href="#" style="display:block; color:var(--off-white-muted); text-decoration:none; font-size: 0.8rem;">Privacy / Terms</a>
+                    </div>
+                </div>
+            </div>
+            <div class="body-text" style="text-align:center; border-top:1px solid var(--border-dim); padding-top:2rem;">© 2026 Dream Built Construction — <strong>All rights reserved.</strong> Quality you can trust.</div>
+        </div>
+    </footer>
+
+<!-- Floating WhatsApp Button -->
+<div class="float-wa">
+    <a href="https://wa.me/923454696064?text=Hello%20Dream%20Built%20Construction%20team%2C%20I%20want%20to%20discuss%20my%20construction%20project." class="float-btn" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+</div>
+
+<script>
+    // ── ANIMATION SYSTEM (bulletproof) ──────────────────────────────────
+    // Step 1: add .js-anim-ready to body so CSS opacity:0 activates
+    document.body.classList.add('js-anim-ready');
+
+    // Step 2: mark everything visible immediately if already in viewport,
+    //         otherwise observe and reveal on scroll
+    const revealEls = document.querySelectorAll('.reveal-up, .reveal-scale, .stagger-children');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0,          // fire the instant ANY pixel enters viewport
+        rootMargin: '0px'      // no shrinking — full viewport used
+    });
+
+    revealEls.forEach(el => observer.observe(el));
+
+    // Step 3: hard failsafe — after 2.5s force everything visible
+    // (covers slow networks, edge cases, browser quirks)
+    setTimeout(() => {
+        revealEls.forEach(el => el.classList.add('visible'));
+    }, 2500);
+
+    // Parallax on hero image
+    const heroImg = document.querySelector('.hero-media img');
+    window.addEventListener('scroll', () => {
+        if (heroImg && window.scrollY < window.innerHeight) {
+            heroImg.style.transform = `translateY(${window.scrollY * 0.08}px) scale(1.02)`;
+        }
+    });
+
+    // Project details toggle
+    document.querySelectorAll('.project-details-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            const href = btn.getAttribute('href');
+            if (href && href !== '#') {
+                window.location.href = href;
+                return;
+            }
+            e.preventDefault();
+            const projectId = btn.getAttribute('data-project');
+            const panel = document.getElementById(`${projectId}-details`);
+            if (panel) {
+                document.querySelectorAll('.project-detail-panel').forEach(p => p.classList.remove('show'));
+                panel.classList.toggle('show');
+                panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+        });
+    });
+
+    // Mobile menu
+    const burger = document.getElementById('burgerBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const closeMenuBtn = document.getElementById('closeMenu');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+    function openMobile() { mobileMenu.classList.add('open'); document.body.style.overflow = 'hidden'; }
+    function closeMobile() { mobileMenu.classList.remove('open'); document.body.style.overflow = ''; }
+    if(burger) burger.addEventListener('click', openMobile);
+    if(closeMenuBtn) closeMenuBtn.addEventListener('click', closeMobile);
+    mobileLinks.forEach(link => link.addEventListener('click', closeMobile));
+
+    // Smooth anchor scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const target = document.querySelector(this.getAttribute('href'));
+            if(target && this.getAttribute('href') !== '#') {
+                e.preventDefault();
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                closeMobile();
+            }
+        });
+    });
+</script>
+</body>
+</html>
